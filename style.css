@@ -1,0 +1,142 @@
+*{
+    padding: 0;margin: 0;
+}
+.home{
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: black;
+    
+}
+.main{
+    margin-left: 80px;
+    height: 40pc;
+    display flex: ;
+}
+header{
+    display: flex;
+    margin-bottom: 150px;
+    padding-right: 300px;
+    align-items: center;
+    gap: 15px;
+}
+header h1{
+    flex-wrap: wrap;
+    color: cyan;
+    margin-right: 400px;
+    flex-grow: 1;
+    margin-left: 7%;
+}
+header a{
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+}
+header a:hover{
+    background: lightgreen;
+    color: black;
+}
+.sec1 a{
+    margin-top: 70px;
+    margin-left: 50px;
+    color: lightgreen;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sec1 a:hover{
+    background-color: lime;
+    color: black;
+}
+#registration_btn{
+    padding-right: px;
+    margin-left: 200px;
+}
+
+#register{
+    padding: 15px;
+    background-color: lime;
+    border-radius: 10px;
+    color: black;
+}
+.sec1{
+    color: beige;
+    font-family: sans-serif;
+}
+.sec1 h1{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+.sec1 p{
+    margin-bottom: 50px;
+    max-width: 500px;
+    font-size: large;
+    text-justify: distribute;
+    text-justify: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feature{
+}
+.sec2 h2{
+    background-color: black;
+    text-align: center;
+    color: azure;
+    font-family: sans-serif;
+    font-size: 600%;
+    padding-bottom: 50px;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 20%;
+}
+
+
+#signup{
+    display: grid;
+    color: black;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: black;
+
+}
+.register{
+    margin: 10%;
+    margin-top: 10px;
+    height: 600px;
+}
+.register h2{
+    text-align: center;
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card{
+    font-family: sans-serif;
+    margin: 50px;
+    max-height: 500px;
+    max-width: 350px;
+    border-radius: 10px;
+    background-color: white;
+}
+#submit{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lime;
+
+}
+
+#footer{
+    background: black;
+}
+#footer p{
+    color: gray;
+}

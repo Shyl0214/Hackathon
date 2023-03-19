@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projectsubmit.css">
+</head>
+<body>
+    <nav>
+        <h1>HMS</h1>
+        <a href="HMS.html">HOME</a>
+        <a href="">CONTACT</a>
+        <a href="HMS.html">SIGN-OUT</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Project Submition</h1>
+            <p>Submit your projcet here.</p>
+        </div>
+        <div class="table">
+            <div class="content">
+                <form action="#" method="POST">
+                    <label for="name">Team Name</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+            
+                    <label for="project_title">Project Title</label>
+                    <input type="text" id="project_title" name="project_title" required>
+            
+                    <label for="project_description">Project Description</label>
+                    <textarea id="project_description" name="project_description" rows="5" required></textarea>
+            
+                    <label for="project_link">GIThub repository url</label>
+                    <input type="text" id="project_link" name="project_link" required>
+            
+                    <input type="submit" value="Submit">
+                </form>
+            </div> 
+        </div>
+    </main>
+    <script>
+        const projectForm = document.getElementById("projectForm");
+
+        projectForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+  // prevent the default form submission behavior
+
+        if (validateForm()) {
+            const xhr = new XMLHttpRequest();
+            const formData = new FormData(projectForm);
+
+            xhr.open("POST", projectForm.action);
+            xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+          // display success message to the user
+                alert("Project submitted successfully!");
+                } 
+            else {
+          // display error message to the user
+            alert("There was an error submitting your project.");
+            }
+        }
+    };
+    xhr.send(formData);
+}
+});
+
+function validateForm() {
+  // perform client-side form validation
+  // return true if the form is valid, false otherwise
+}
+    </script>
+</body>
+</html>

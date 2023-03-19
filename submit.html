@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <nav>
+        <h1>HMS</h1>
+        <a href="">HOME</a>
+        <a href="">CONTACT</a>
+        <a href="#" id="signout-link" onclick="signOut()">SIGN-OUT</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Review All Projects</h1>
+            <p>Here you can review/judge all the submitted projects and also give marks according to their performance.</p>
+        </div>
+        <div class="table">
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>Sr no</th>
+                        <th>Name</th>
+                        <th>Project code</th>
+                        <th>Review</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Team 1</td>
+                        <td>www.website_1.com</td>
+                        <td><button style="background-color: lime; border-radius: 10px;padding-right: 10px;padding-left:10px;padding: 10px; font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rate</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Team 2</td>
+                        <td>www.website_2.com</td>
+                        <td><button style="background-color: lime; border-radius: 10px;padding-right: 10px;padding-left:10px; padding: 10px;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rate</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Team 3</td>
+                        <td>www.website_3.com</td>
+                        <td><button style="background-color: lime; border-radius: 10px;padding-right: 10px;padding-left:10px;padding: 10px; font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rate</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Team 4</td>
+                        <td>www.website_4.com</td>
+                        <td><button style="background-color: lime; border-radius: 10px;padding-right: 10px;padding-left:10px;padding: 10px; font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rate</button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Team 5</td>
+                        <td>www.website_5.com</td>
+                        <td><button style="background-color: lime; border-radius: 10px;padding-right: 10px;padding-left:10px;padding: 10px; font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rate</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script>
+        function signOut() {
+  // Remove any session data or cookies associated with the user's login information
+  // For example, you could use a library like js-cookie to remove cookies
+
+            Cookies.remove('username');
+
+  // Redirect the user to a login page or another appropriate page
+            window.location.href = 'HMS.html';
+}
+
+// Add an event listener to the sign-out link
+            document.getElementById('signout-link').addEventListener('click', function(event) {
+  // Prevent the default behavior of the link (i.e. navigating to another page)
+                event.preventDefault();
+
+  // Call the sign-out function
+                signOut();
+        });
+    </script>
+</body>
+</html>

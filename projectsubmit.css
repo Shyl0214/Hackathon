@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    max-width: 100vw;
+    width: 100vw;
+    display: flex;
+    font-family: sans-serif;
+    background-color: #212121;
+    position: fixed;
+}
+nav h1{
+    color: cyan;
+    padding: 20px;
+    margin-right: 40%;
+}
+nav a{
+    text-align: center;
+    margin: auto 0;
+    padding: 15px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+
+    border-radius: 50px;
+    transition: 0.5s;
+}
+nav a:hover{
+    background-color: lime;
+    color: black;
+    font-weight: bold;
+}
+main{
+    background-color: #181818;
+    background-size: cover;
+    height: 100%;
+}
+.container{
+    background-color: #212121;
+    height: fit-content;
+    width: 100%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50%;
+}
+.container p{
+    color: whitesmoke;
+    padding-left: 200px;
+    max-width: 550px;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+    font-size: x-large;
+    padding-top: 50px;
+}
+.container h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    color: lime;
+    font-size: 60px;
+    padding-left: 150px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.table .content{
+    background-color: #212121;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: white;
+    padding: 40px;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
